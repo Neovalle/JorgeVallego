@@ -40,12 +40,16 @@
 
     :root {
       --text: #202427;
-      --muted: #62696d;
+      --muted: #59666b;
       --line: #e2e5e7;
       --background: #ffffff;
       --soft-background: #f7f8f8;
-      --accent: #264c46;
-      --accent-dark: #183a35;
+
+      --accent: #28534d;
+      --accent-dark: #193b36;
+      --heading: #28534d;
+      --subheading: #345e58;
+
       --max-width: 1080px;
     }
 
@@ -123,7 +127,7 @@
 
 
     .brand {
-      color: var(--text);
+      color: var(--heading);
 
       text-decoration: none;
       font-size: 1rem;
@@ -169,6 +173,8 @@
     .hero h1 {
       margin: 0;
 
+      color: var(--heading);
+
       font-size: clamp(3.3rem, 8vw, 6rem);
       line-height: 0.98;
 
@@ -179,6 +185,8 @@
 
     .hero h2 {
       margin: 14px 0 25px;
+
+      color: var(--muted);
 
       font-size: clamp(1.8rem, 4vw, 2.7rem);
       font-weight: 400;
@@ -215,7 +223,7 @@
     .button {
       display: inline-block;
 
-      padding: 12px 21px;
+      padding: 12px 22px;
       margin: 0 8px 8px 0;
 
       border: 1px solid var(--accent);
@@ -225,11 +233,16 @@
 
       font-weight: 600;
       text-decoration: none;
+
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
     }
 
 
     .button:hover {
       background: var(--accent-dark);
+      border-color: var(--accent-dark);
       color: white;
     }
 
@@ -254,6 +267,8 @@
     section h2 {
       margin: 0 0 25px;
 
+      color: var(--heading);
+
       font-size: clamp(2rem, 4vw, 2.7rem);
       line-height: 1.15;
 
@@ -264,6 +279,8 @@
     section h3 {
       margin-top: 0;
       margin-bottom: 10px;
+
+      color: var(--subheading);
 
       font-size: 1.18rem;
     }
@@ -326,8 +343,15 @@
 
       margin-top: 10px;
 
+      color: var(--accent);
+
       font-weight: 600;
       text-decoration: none;
+    }
+
+
+    .card-link:hover {
+      text-decoration: underline;
     }
 
 
@@ -352,7 +376,10 @@
       border: 1px solid var(--line);
       background: white;
 
+      color: var(--subheading);
+
       font-size: 0.9rem;
+      font-weight: 500;
     }
 
 
@@ -368,7 +395,6 @@
 
     .contact-note {
       max-width: 720px;
-
       margin-bottom: 30px;
     }
 
@@ -567,11 +593,11 @@
 
 
     <p class="section-intro">
-      Selected advisory and consulting engagements for
-      organisations, research groups and professional
-      teams requiring experienced, independent technical
-      judgement without the overhead of a large
-      consultancy engagement.
+      I undertake selected advisory and consulting
+      engagements for organisations, research groups
+      and professional teams requiring experienced,
+      independent technical judgement without the
+      overhead of a large consultancy engagement.
     </p>
 
 
@@ -798,53 +824,18 @@
 
     <div class="areas">
 
-      <span class="area">
-        Software Development
-      </span>
-
-      <span class="area">
-        Databases
-      </span>
-
-      <span class="area">
-        Data Engineering
-      </span>
-
-      <span class="area">
-        Data Architecture
-      </span>
-
-      <span class="area">
-        Data Science
-      </span>
-
-      <span class="area">
-        Machine Learning
-      </span>
-
-      <span class="area">
-        Generative AI
-      </span>
-
-      <span class="area">
-        Large Language Models
-      </span>
-
-      <span class="area">
-        Model Evaluation
-      </span>
-
-      <span class="area">
-        RAG
-      </span>
-
-      <span class="area">
-        Semantic Systems
-      </span>
-
-      <span class="area">
-        Knowledge Representation
-      </span>
+      <span class="area">Software Development</span>
+      <span class="area">Databases</span>
+      <span class="area">Data Engineering</span>
+      <span class="area">Data Architecture</span>
+      <span class="area">Data Science</span>
+      <span class="area">Machine Learning</span>
+      <span class="area">Generative AI</span>
+      <span class="area">Large Language Models</span>
+      <span class="area">Model Evaluation</span>
+      <span class="area">RAG</span>
+      <span class="area">Semantic Systems</span>
+      <span class="area">Knowledge Representation</span>
 
     </div>
 
@@ -918,7 +909,7 @@
         </h3>
 
         <p>
-          Founder and Project Lead of an interdisciplinary
+          I founded and lead this interdisciplinary
           research programme investigating AI,
           ecolinguistics, ecological alignment, model
           evaluation, multilingual systems, values and
@@ -1066,7 +1057,7 @@
         </h3>
 
         <p>
-          Research across artificial intelligence,
+          My research spans artificial intelligence,
           ecolinguistics, LLM evaluation, ecological
           alignment, multilingual AI, discourse,
           AI world models and related interdisciplinary
@@ -1135,11 +1126,10 @@
 
 
       <p>
-        Tailored sessions can be designed for
-        universities, research groups and professional
-        teams, ranging from conceptual introductions
-        to practical technical workshops and specialist
-        AI training.
+        I design tailored sessions for universities,
+        research groups and professional teams, ranging
+        from conceptual introductions to practical
+        technical workshops and specialist AI training.
       </p>
 
 
