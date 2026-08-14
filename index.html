@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -9,15 +10,31 @@
 
   <meta
     name="description"
-    content="Jorge Vallego — independent AI & Data Advisor providing senior advice across artificial intelligence, data science, machine learning, LLMs, data engineering and AI research."
+    content="Jorge Vallego — AI & Data Advisor providing senior independent advice across artificial intelligence, data science, machine learning, LLMs, data engineering and AI research."
   >
 
-  <meta property="og:title" content="Jorge Vallego | AI & Data Advisor">
+  <link
+    rel="canonical"
+    href="https://neovalle.github.io/JorgeVallego/"
+  >
+
+  <meta
+    property="og:title"
+    content="Jorge Vallego | AI & Data Advisor"
+  >
+
   <meta
     property="og:description"
     content="Senior independent advice across AI, data science, machine learning, LLMs and data engineering."
   >
+
   <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://neovalle.github.io/JorgeVallego/"
+  >
+
 
   <style>
 
@@ -32,16 +49,20 @@
       --max-width: 1080px;
     }
 
+
     * {
       box-sizing: border-box;
     }
+
 
     html {
       scroll-behavior: smooth;
     }
 
+
     body {
       margin: 0;
+
       background: var(--background);
       color: var(--text);
 
@@ -58,13 +79,16 @@
       line-height: 1.65;
     }
 
+
     a {
       color: var(--accent);
     }
 
+
     a:hover {
       color: var(--accent-dark);
     }
+
 
     .container {
       width: min(var(--max-width), 90%);
@@ -72,9 +96,10 @@
     }
 
 
-    /* ==============================================
+
+    /* ==================================================
        NAVIGATION
-    ============================================== */
+    ================================================== */
 
     header {
       position: sticky;
@@ -84,6 +109,7 @@
       background: rgba(255, 255, 255, 0.96);
       border-bottom: 1px solid var(--line);
     }
+
 
     nav {
       min-height: 68px;
@@ -95,78 +121,96 @@
       gap: 30px;
     }
 
+
     .brand {
       color: var(--text);
+
       text-decoration: none;
       font-size: 1rem;
       font-weight: 700;
+
       white-space: nowrap;
     }
+
 
     .nav-links {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
+
       gap: 22px;
     }
 
+
     .nav-links a {
       color: var(--text);
+
       text-decoration: none;
       font-size: 0.9rem;
     }
+
 
     .nav-links a:hover {
       color: var(--accent);
     }
 
 
-    /* ==============================================
+
+    /* ==================================================
        HERO
-    ============================================== */
+    ================================================== */
 
     .hero {
       max-width: 950px;
       padding: 115px 0 105px;
     }
 
+
     .hero h1 {
       margin: 0;
 
       font-size: clamp(3.3rem, 8vw, 6rem);
       line-height: 0.98;
+
       letter-spacing: -0.055em;
       font-weight: 700;
     }
+
 
     .hero h2 {
       margin: 14px 0 25px;
 
       font-size: clamp(1.8rem, 4vw, 2.7rem);
       font-weight: 400;
+
       letter-spacing: -0.025em;
     }
+
 
     .expertise {
       margin: 0 0 30px;
 
+      color: var(--accent);
+
       font-size: 1.14rem;
       font-weight: 600;
-      color: var(--accent);
     }
+
 
     .hero-intro {
       max-width: 820px;
 
       margin: 0 0 38px;
+
       font-size: 1.22rem;
       line-height: 1.6;
     }
 
 
-    /* ==============================================
+
+    /* ==================================================
        BUTTONS
-    ============================================== */
+    ================================================== */
 
     .button {
       display: inline-block;
@@ -183,42 +227,39 @@
       text-decoration: none;
     }
 
+
     .button:hover {
       background: var(--accent-dark);
       color: white;
     }
 
-    .button.secondary {
-      background: white;
-      color: var(--accent);
-    }
-
-    .button.secondary:hover {
-      background: var(--soft-background);
-      color: var(--accent-dark);
-    }
 
 
-    /* ==============================================
+    /* ==================================================
        SECTIONS
-    ============================================== */
+    ================================================== */
 
     section {
       padding: 85px 0;
+
       border-top: 1px solid var(--line);
     }
+
 
     section.soft {
       background: var(--soft-background);
     }
+
 
     section h2 {
       margin: 0 0 25px;
 
       font-size: clamp(2rem, 4vw, 2.7rem);
       line-height: 1.15;
+
       letter-spacing: -0.035em;
     }
+
 
     section h3 {
       margin-top: 0;
@@ -227,31 +268,40 @@
       font-size: 1.18rem;
     }
 
+
     .section-intro {
       max-width: 820px;
 
       margin: 0 0 42px;
+
       font-size: 1.08rem;
     }
+
 
     .wide-text {
       max-width: 840px;
     }
+
 
     .wide-text p:first-child {
       margin-top: 0;
     }
 
 
-    /* ==============================================
+
+    /* ==================================================
        CARDS
-    ============================================== */
+    ================================================== */
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
       gap: 22px;
     }
+
 
     .card {
       padding: 28px;
@@ -260,16 +310,20 @@
       border: 1px solid var(--line);
     }
 
+
     .soft .card {
       background: var(--background);
     }
+
 
     .card p:last-child {
       margin-bottom: 0;
     }
 
+
     .card-link {
       display: inline-block;
+
       margin-top: 10px;
 
       font-weight: 600;
@@ -277,17 +331,20 @@
     }
 
 
-    /* ==============================================
-       SKILL TAGS
-    ============================================== */
+
+    /* ==================================================
+       EXPERIENCE TAGS
+    ================================================== */
 
     .areas {
       display: flex;
       flex-wrap: wrap;
+
       gap: 10px;
 
       margin-top: 32px;
     }
+
 
     .area {
       padding: 7px 12px;
@@ -299,23 +356,27 @@
     }
 
 
-    /* ==============================================
+
+    /* ==================================================
        CONTACT
-    ============================================== */
+    ================================================== */
 
     .contact {
       padding-bottom: 105px;
     }
 
+
     .contact-note {
       max-width: 720px;
+
       margin-bottom: 30px;
     }
 
 
-    /* ==============================================
+
+    /* ==================================================
        FOOTER
-    ============================================== */
+    ================================================== */
 
     footer {
       padding: 30px 0;
@@ -326,17 +387,20 @@
       font-size: 0.88rem;
     }
 
+
     .footer-row {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
       flex-wrap: wrap;
+
+      gap: 30px;
     }
 
 
-    /* ==============================================
+
+    /* ==================================================
        MOBILE
-    ============================================== */
+    ================================================== */
 
     @media (max-width: 760px) {
 
@@ -344,28 +408,36 @@
         font-size: 16px;
       }
 
+
       header {
         position: static;
       }
 
+
       nav {
         align-items: flex-start;
         flex-direction: column;
+
         padding: 18px 0;
       }
 
+
       .nav-links {
         justify-content: flex-start;
+
         gap: 12px 18px;
       }
+
 
       .hero {
         padding: 70px 0;
       }
 
+
       section {
         padding: 62px 0;
       }
+
 
       .grid {
         grid-template-columns: 1fr;
@@ -374,15 +446,17 @@
     }
 
   </style>
+
 </head>
+
 
 
 <body>
 
 
-<!-- ==============================================
+<!-- ==================================================
      NAVIGATION
-============================================== -->
+================================================== -->
 
 <header>
 
@@ -394,19 +468,32 @@
         Jorge Vallego
       </a>
 
+
       <div class="nav-links">
 
-        <a href="#advisory">Advisory</a>
+        <a href="#advisory">
+          Advisory
+        </a>
 
-        <a href="#engagements">Engagements</a>
+        <a href="#engagements">
+          Engagements
+        </a>
 
-        <a href="#experience">Experience</a>
+        <a href="#experience">
+          Experience
+        </a>
 
-        <a href="#projects">Research & Projects</a>
+        <a href="#projects">
+          Research &amp; Projects
+        </a>
 
-        <a href="#training">Training</a>
+        <a href="#training">
+          Training
+        </a>
 
-        <a href="#contact">Contact</a>
+        <a href="#contact">
+          Contact
+        </a>
 
       </div>
 
@@ -421,39 +508,43 @@
 <main id="top">
 
 
-<!-- ==============================================
+<!-- ==================================================
      HERO
-============================================== -->
+================================================== -->
 
 <div class="container">
 
   <div class="hero">
 
-    <h1>Jorge Vallego</h1>
+    <h1>
+      Jorge Vallego
+    </h1>
 
-    <h2>AI &amp; Data Advisor</h2>
+
+    <h2>
+      AI &amp; Data Advisor
+    </h2>
+
 
     <p class="expertise">
-      AI · Data Science · Machine Learning · LLMs · Data Engineering
+      AI · Data Science · Machine Learning ·
+      LLMs · Data Engineering
     </p>
+
 
     <p class="hero-intro">
-      Senior independent advice for organisations, researchers and
-      professional teams working with artificial intelligence, data,
-      machine learning and emerging computational technologies.
+      Senior independent advice for organisations,
+      researchers and professional teams working with
+      artificial intelligence, data, machine learning
+      and emerging computational technologies.
     </p>
 
-    <a class="button" href="#contact">
-      Discuss an engagement
-    </a>
 
     <a
-      class="button secondary"
-      href="https://www.linkedin.com/in/jorge-vallego-391838a6/"
-      target="_blank"
-      rel="noopener"
+      class="button"
+      href="mailto:jorge.vallego@neovalle.co.uk?subject=Advisory%20Enquiry"
     >
-      LinkedIn
+      Start a Conversation
     </a>
 
   </div>
@@ -462,22 +553,27 @@
 
 
 
-<!-- ==============================================
+<!-- ==================================================
      ADVISORY
-============================================== -->
+================================================== -->
 
 <section id="advisory" class="soft">
 
   <div class="container">
 
-    <h2>Independent AI &amp; Data Advice</h2>
+    <h2>
+      Independent AI &amp; Data Advice
+    </h2>
+
 
     <p class="section-intro">
-      Selected remote advisory and consulting engagements for
-      organisations, research groups and professional teams requiring
-      experienced, independent technical judgement without the
-      overhead of a large consultancy engagement.
+      Selected advisory and consulting engagements for
+      organisations, research groups and professional
+      teams requiring experienced, independent technical
+      judgement without the overhead of a large
+      consultancy engagement.
     </p>
+
 
 
     <div class="grid">
@@ -485,51 +581,66 @@
 
       <div class="card">
 
-        <h3>AI &amp; LLM Strategy</h3>
+        <h3>
+          AI &amp; LLM Strategy
+        </h3>
 
         <p>
-          Model selection, feasibility, architecture, generative AI
-          applications, RAG, semantic systems, knowledge-based
-          approaches and agentic systems.
+          Model selection, feasibility, architecture,
+          generative AI applications, RAG, semantic
+          systems, knowledge-based approaches and
+          agentic systems.
         </p>
 
       </div>
 
 
+
       <div class="card">
 
-        <h3>Data Science &amp; Machine Learning</h3>
+        <h3>
+          Data Science &amp; Machine Learning
+        </h3>
 
         <p>
-          Machine learning approaches, data-driven modelling,
-          experimental design, evaluation and the appropriate use
-          of statistical, analytical and AI methods.
+          Machine learning approaches, data-driven
+          modelling, experimental design, evaluation
+          and the appropriate use of statistical,
+          analytical and AI methods.
         </p>
 
       </div>
 
 
+
       <div class="card">
 
-        <h3>Data Engineering &amp; Architecture</h3>
+        <h3>
+          Data Engineering &amp; Architecture
+        </h3>
 
         <p>
-          Data architecture, databases, integration, pipelines and
-          the underlying systems required to support reliable AI,
-          analytical and research applications.
+          Data architecture, databases, integration,
+          pipelines and the underlying systems required
+          to support reliable AI, analytical and
+          research applications.
         </p>
 
       </div>
 
 
+
       <div class="card">
 
-        <h3>AI Evaluation &amp; Research</h3>
+        <h3>
+          AI Evaluation &amp; Research
+        </h3>
 
         <p>
-          Model evaluation, AI research methodology, experimental
-          design, responsible AI and independent technical review
-          of AI-related systems, research and proposals.
+          Model evaluation, AI research methodology,
+          experimental design, responsible AI and
+          independent technical review of AI-related
+          systems, research and proposals.
         </p>
 
       </div>
@@ -543,20 +654,25 @@
 
 
 
-<!-- ==============================================
+<!-- ==================================================
      ENGAGEMENTS
-============================================== -->
+================================================== -->
 
 <section id="engagements">
 
   <div class="container">
 
-    <h2>Ways to Engage</h2>
+    <h2>
+      Ways to Engage
+    </h2>
+
 
     <p class="section-intro">
-      Engagements can range from a focused expert discussion to a
-      clearly scoped advisory or research project.
+      Engagements can range from a focused expert
+      discussion to a clearly scoped advisory,
+      technical or research project.
     </p>
+
 
 
     <div class="grid">
@@ -564,48 +680,63 @@
 
       <div class="card">
 
-        <h3>Expert Consultation</h3>
+        <h3>
+          Expert Consultation
+        </h3>
 
         <p>
-          A focused remote discussion around a specific AI, data,
-          machine learning, architecture or research problem.
+          A focused discussion around a specific AI,
+          data, machine learning, architecture or
+          research problem.
         </p>
 
       </div>
 
 
+
       <div class="card">
 
-        <h3>Independent Advisory Review</h3>
+        <h3>
+          Independent Advisory Review
+        </h3>
 
         <p>
-          Independent assessment of an architecture, proposal,
-          research design, model, system or technical approach,
-          followed by practical recommendations.
+          Independent assessment of an architecture,
+          proposal, research design, model, system or
+          technical approach, followed by practical
+          recommendations.
         </p>
 
       </div>
 
 
+
       <div class="card">
 
-        <h3>Short Consulting Engagement</h3>
+        <h3>
+          Short Consulting Engagement
+        </h3>
 
         <p>
-          Clearly scoped technical or strategic work where deeper
-          investigation, analysis, evaluation or design is required.
+          Clearly scoped technical or strategic work
+          where deeper investigation, analysis,
+          evaluation or design is required.
         </p>
 
       </div>
 
 
+
       <div class="card">
 
-        <h3>Mentoring &amp; Workshops</h3>
+        <h3>
+          Mentoring &amp; Workshops
+        </h3>
 
         <p>
-          Individual mentoring and tailored remote workshops for
-          academic, research and professional audiences.
+          Individual mentoring and tailored workshops
+          for academic, research and professional
+          audiences.
         </p>
 
       </div>
@@ -619,68 +750,101 @@
 
 
 
-<!-- ==============================================
+<!-- ==================================================
      EXPERIENCE
-============================================== -->
+================================================== -->
 
 <section id="experience" class="soft">
 
   <div class="container">
 
-    <h2>Experience Across Generations of Computing</h2>
+    <h2>
+      Experience Across Generations of Computing
+    </h2>
+
 
     <div class="wide-text">
 
       <p>
-        My background is built on a long technical career spanning
-        multiple generations of computing, from software development
-        and databases through data engineering, data science and
-        machine learning to current research and hands-on work in
-        generative AI and Large Language Models.
+        My background is built on a long technical
+        career spanning multiple generations of
+        computing, from software development and
+        databases through data engineering, data
+        science and machine learning to current research
+        and hands-on work in generative AI and Large
+        Language Models.
       </p>
 
-      <p>
-        This provides a perspective on AI grounded not only in
-        emerging technologies, but also in the data, systems,
-        architectures and computational foundations on which they
-        depend.
-      </p>
 
       <p>
-        That combination of deep technical experience and current
-        research is particularly valuable when assessing whether an
-        AI approach is technically sound, appropriately scoped and
+        This provides a perspective on AI grounded not
+        only in emerging technologies, but also in the
+        data, systems, architectures and computational
+        foundations on which they depend.
+      </p>
+
+
+      <p>
+        That combination of deep technical experience
+        and current research is particularly valuable
+        when assessing whether an AI approach is
+        technically sound, appropriately scoped and
         genuinely useful.
       </p>
 
     </div>
 
 
+
     <div class="areas">
 
-      <span class="area">Software Development</span>
+      <span class="area">
+        Software Development
+      </span>
 
-      <span class="area">Databases</span>
+      <span class="area">
+        Databases
+      </span>
 
-      <span class="area">Data Engineering</span>
+      <span class="area">
+        Data Engineering
+      </span>
 
-      <span class="area">Data Architecture</span>
+      <span class="area">
+        Data Architecture
+      </span>
 
-      <span class="area">Data Science</span>
+      <span class="area">
+        Data Science
+      </span>
 
-      <span class="area">Machine Learning</span>
+      <span class="area">
+        Machine Learning
+      </span>
 
-      <span class="area">Generative AI</span>
+      <span class="area">
+        Generative AI
+      </span>
 
-      <span class="area">Large Language Models</span>
+      <span class="area">
+        Large Language Models
+      </span>
 
-      <span class="area">Model Evaluation</span>
+      <span class="area">
+        Model Evaluation
+      </span>
 
-      <span class="area">RAG</span>
+      <span class="area">
+        RAG
+      </span>
 
-      <span class="area">Semantic Systems</span>
+      <span class="area">
+        Semantic Systems
+      </span>
 
-      <span class="area">Knowledge Representation</span>
+      <span class="area">
+        Knowledge Representation
+      </span>
 
     </div>
 
@@ -690,22 +854,27 @@
 
 
 
-<!-- ==============================================
-     RESEARCH & PROJECTS
-============================================== -->
+<!-- ==================================================
+     RESEARCH & SELECTED PROJECTS
+================================================== -->
 
 <section id="projects">
 
   <div class="container">
 
-    <h2>Research &amp; Selected Projects</h2>
+    <h2>
+      Research &amp; Selected Projects
+    </h2>
+
 
     <p class="section-intro">
-      Alongside advisory work, I remain actively involved in research
-      and experimental projects spanning artificial intelligence,
-      language, meaning, ecological narratives, model evaluation and
-      knowledge representation.
+      Alongside advisory work, I remain actively involved
+      in research, development and experimental projects
+      spanning artificial intelligence, data, language,
+      model evaluation, knowledge representation and
+      ecological narratives.
     </p>
+
 
 
     <div class="grid">
@@ -715,30 +884,47 @@
 
       <div class="card">
 
-        <h3>Ecophora</h3>
+        <h3>
+          Ecophora
+        </h3>
 
         <p>
-          Current interdisciplinary work at the University of
-          Gloucestershire exploring ecologically aligned artificial
-          intelligence, model behaviour, evaluation and the role of
-          explicit values and ecosophies in AI systems.
+          Interdisciplinary work exploring ecologically
+          aligned artificial intelligence, model
+          behaviour, evaluation and the role of explicit
+          values and ecosophies in AI systems.
         </p>
 
+
+        <a
+          class="card-link"
+          href="https://ecophora.org/"
+          target="_blank"
+          rel="noopener"
+        >
+          Explore Ecophora →
+        </a>
+
       </div>
+
 
 
       <!-- H4RMONY -->
 
       <div class="card">
 
-        <h3>The H4rmony Project</h3>
+        <h3>
+          The H4rmony Project
+        </h3>
 
         <p>
-          Founder and Project Lead of an interdisciplinary research
-          programme investigating AI, ecolinguistics, ecological
-          alignment, model evaluation, multilingual systems, values
-          and ecological discourse.
+          Founder and Project Lead of an interdisciplinary
+          research programme investigating AI,
+          ecolinguistics, ecological alignment, model
+          evaluation, multilingual systems, values and
+          ecological discourse.
         </p>
+
 
         <a
           class="card-link"
@@ -752,18 +938,53 @@
       </div>
 
 
+
+      <!-- THEOPHRASTUS -->
+
+      <div class="card">
+
+        <h3>
+          Theophrastus
+        </h3>
+
+        <p>
+          An ecosophy-guided AI assistant developed as
+          part of The H4rmony Project, combining Large
+          Language Models with ecolinguistic principles
+          and curated knowledge to explore more
+          ecologically informed forms of AI interaction.
+        </p>
+
+
+        <a
+          class="card-link"
+          href="https://chatgpt.com/g/g-XKAVRvxwc-theophrastus"
+          target="_blank"
+          rel="noopener"
+        >
+          Try Theophrastus →
+        </a>
+
+      </div>
+
+
+
       <!-- TREETALKER -->
 
       <div class="card">
 
-        <h3>TreeTalker / Thinguistics</h3>
+        <h3>
+          TreeTalker / Thinguistics
+        </h3>
 
         <p>
-          University of Gloucestershire interdisciplinary research
-          exploring AI-mediated communication with the more-than-human
-          world and new ways of representing communication between
-          humans, technology and living systems.
+          Interdisciplinary research at the University
+          of Gloucestershire exploring AI-mediated
+          communication with the more-than-human world
+          and relationships between humans, technology
+          and living systems.
         </p>
+
 
         <a
           class="card-link"
@@ -771,24 +992,29 @@
           target="_blank"
           rel="noopener"
         >
-          Thinguistics →
+          Explore Thinguistics →
         </a>
 
       </div>
+
 
 
       <!-- ECONARRATIVES -->
 
       <div class="card">
 
-        <h3>Econarratives</h3>
+        <h3>
+          Econarratives
+        </h3>
 
         <p>
-          Work with the University of Gloucestershire around
-          ecolinguistics, narratives, ecological education and the
-          stories through which societies understand their
-          relationships with the living world.
+          Work at the University of Gloucestershire
+          around ecolinguistics, narratives, ecological
+          education and the stories through which
+          societies understand their relationships with
+          the living world.
         </p>
+
 
         <a
           class="card-link"
@@ -796,23 +1022,27 @@
           target="_blank"
           rel="noopener"
         >
-          Econarratives →
+          Explore Econarratives →
         </a>
 
       </div>
+
 
 
       <!-- ECOLOGICAL SCALE -->
 
       <div class="card">
 
-        <h3>Ecological Scale</h3>
+        <h3>
+          Ecological Scale
+        </h3>
 
         <p>
-          A practical research application for exploring and
-          evaluating ecological perspectives, values and positions
-          along an ecological scale.
+          A practical research application for exploring
+          and evaluating ecological perspectives, values
+          and positions along an ecological scale.
         </p>
+
 
         <a
           class="card-link"
@@ -820,24 +1050,29 @@
           target="_blank"
           rel="noopener"
         >
-          Ecological Scale →
+          Explore Ecological Scale →
         </a>
 
       </div>
+
 
 
       <!-- PUBLICATIONS -->
 
       <div class="card">
 
-        <h3>Publications</h3>
+        <h3>
+          Publications
+        </h3>
 
         <p>
-          Research across artificial intelligence, ecolinguistics,
-          LLM evaluation, ecological alignment, multilingual AI,
-          discourse, AI world models and related interdisciplinary
+          Research across artificial intelligence,
+          ecolinguistics, LLM evaluation, ecological
+          alignment, multilingual AI, discourse,
+          AI world models and related interdisciplinary
           areas.
         </p>
+
 
         <a
           class="card-link"
@@ -854,12 +1089,17 @@
     </div>
 
 
-    <div class="wide-text" style="margin-top: 42px;">
+
+    <div
+      class="wide-text"
+      style="margin-top: 42px;"
+    >
 
       <p>
-        I currently hold a Research Associate role at the University
-        of Gloucestershire, contributing to several of these
-        interdisciplinary research initiatives.
+        I currently hold a Research Associate role at
+        the University of Gloucestershire, contributing
+        to several interdisciplinary research
+        initiatives.
       </p>
 
     </div>
@@ -870,37 +1110,45 @@
 
 
 
-<!-- ==============================================
+<!-- ==================================================
      TRAINING
-============================================== -->
+================================================== -->
 
 <section id="training" class="soft">
 
   <div class="container">
 
-    <h2>Teaching, Training &amp; Mentoring</h2>
+    <h2>
+      Teaching, Training &amp; Mentoring
+    </h2>
+
 
     <div class="wide-text">
 
       <p>
-        Teaching, training and mentoring have been an important part
-        of my work, supporting students and professionals across
-        databases, data engineering, data science, machine learning
+        Teaching, training and mentoring have been an
+        important part of my work, supporting students
+        and professionals across databases, data
+        engineering, data science, machine learning
         and artificial intelligence.
       </p>
 
-      <p>
-        Tailored remote sessions can be designed for universities,
-        research groups and professional teams, ranging from
-        conceptual introductions to practical technical workshops
-        and specialist AI training.
-      </p>
 
       <p>
-        As a native Spanish speaker with long professional experience
-        in the UK, my work also includes multilingual and
-        cross-cultural AI, Spanish-language NLP and LLM evaluation,
-        and collaboration across Latin America and Europe.
+        Tailored sessions can be designed for
+        universities, research groups and professional
+        teams, ranging from conceptual introductions
+        to practical technical workshops and specialist
+        AI training.
+      </p>
+
+
+      <p>
+        As a native Spanish speaker with long
+        professional experience in the UK, my work also
+        includes multilingual and cross-cultural AI,
+        Spanish-language NLP and LLM evaluation, and
+        collaboration across Latin America and Europe.
       </p>
 
     </div>
@@ -911,19 +1159,22 @@
 
 
 
-<!-- ==============================================
+<!-- ==================================================
      CONTACT
-============================================== -->
+================================================== -->
 
 <section id="contact" class="contact">
 
   <div class="container">
 
-    <h2>Discuss an Engagement</h2>
+    <h2>
+      Start a Conversation
+    </h2>
+
 
     <p class="contact-note">
-      Consulting and advisory engagements are provided through
-      Neovalle Ltd.
+      Consulting and advisory engagements are provided
+      through Neovalle Ltd.
     </p>
 
 
@@ -931,17 +1182,7 @@
       class="button"
       href="mailto:jorge.vallego@neovalle.co.uk?subject=Advisory%20Enquiry"
     >
-      jorge.vallego@neovalle.co.uk
-    </a>
-
-
-    <a
-      class="button secondary"
-      href="https://www.linkedin.com/in/jorge-vallego-391838a6/"
-      target="_blank"
-      rel="noopener"
-    >
-      LinkedIn
+      Start a Conversation
     </a>
 
   </div>
@@ -953,9 +1194,9 @@
 
 
 
-<!-- ==============================================
+<!-- ==================================================
      FOOTER
-============================================== -->
+================================================== -->
 
 <footer>
 
@@ -979,4 +1220,5 @@
 
 
 </body>
+
 </html>
